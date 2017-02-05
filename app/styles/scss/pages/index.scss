@@ -66,6 +66,7 @@
     }
 }
 #about {
+  padding-bottom: 5em;
   h2{
     color: $black-1;
     padding: 2em 0 1em 0em;
@@ -73,10 +74,110 @@
     font-size: 3.5em;
   }
   p{
-    line-height: 1.8;
-    font-size: 1.6em;
+    line-height: 1.6;
+    font-size: 1.9em;
     font-weight: 300;
     color: $black-1;
     padding: 0 0 1em 0;
   }
+}
+#signit {
+  background: url("/images/banner-bg.jpg");
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 13em;
+  width: 100%;
+  padding-bottom: 5em;
+  h2{
+    color: $white;
+    padding: 2em 0 1em 0em;
+    font-weight: 300;
+    font-size: 3.5em;
+  }
+  p{
+    line-height: 1;
+    font-size: 1.6em;
+    font-weight: 300;
+    color: $white;
+    padding: 0 0 1.5em 0;
+  }
+}
+#prices {
+  background: #f6f6f6;
+  padding: 0 0 2em;
+  h2, h3{
+    color: $black-1;
+    padding: 2em 0 1em 0em;
+    font-weight: 300;
+    font-size: 3.5em;
+    }
+    .price-container {
+         background: $white;
+         box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.20);
+         &:nth-child(3) {
+             position: relative;
+             top: -1em;
+             &:nth-child(3) {
+                 position: relative;
+                 top: -1em;
+                 padding:1.208em;
+             }
+         }
+    }
+
+    .price-header {
+         border-top-width: 5px;
+         border-top-style: solid;
+         &.silver {
+             border-top-color: #909090;
+         }
+         &.gold {
+             border-top-color: #c09b4d;
+         }
+         &.royal {
+             border-top-color: #17267f;
+         }
+         small {
+             color: $black-1;
+             padding: 0.8em;
+         }
+     }
+    .price-content {
+        .line-bottom {
+            border-bottom: 1px solid $black-1;
+            padding: 0.8em 0;
+        }
+        strong {
+            font-size: 2em;
+        }
+        .feature-list {
+            list-style: none;
+            text-align: left;
+            padding: 0;
+            li {
+                font-size: 1.1em;
+            }
+        }
+    }
+    .price-footer{
+        margin: 1em 0 0 0;
+        .btn-prices{
+            border-radius: 0;
+            width: 100%;
+            position: relative;
+            color: $white;
+            &.silver {
+                background: #909090;
+            }
+            &.gold {
+                background: #c09b4d;
+                }
+            &.royale {
+                background: #17267f;
+            }
+        }
+    }
+
 }
