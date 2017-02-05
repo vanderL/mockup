@@ -5,4 +5,44 @@
     background-repeat: no-repeat;
     width: 100%;
     min-height: 800px;
-  }
+
+      #navigation {
+        width: 100%;
+        min-height: 80px;
+        background-color: $black-1;
+        opacity: 0.6;
+
+          .navbar-header{
+            padding: 1em 0;
+              .navbar-brand{
+              font-size: 2em;
+              font-weight: bold;
+              color: $white;
+              font-family: $font-family;
+              } // .navbar-brand
+          }// end navbar-header
+          #navbar {
+           .navbar-nav {
+               li {
+                   padding: 1em 0;
+                   a {
+                       color: $white;
+                       font-weight:bold;
+                       text-transform: uppercase;
+                       font-size: 1em;
+                       &:hover, &:focus, &:active {
+                            border: 1px solid $white;
+                            background: transparent;
+                      } //hover
+                    } // a
+                 }// li
+             } // navbar-nav
+        } // navbar-header
+    } // navigation
+    .welcome {
+      font-size: 4em;
+      font-weight: 300;
+      color: $white;
+      padding: 5em 0 0 0;
+    }
+}//header

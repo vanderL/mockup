@@ -1,1 +1,11 @@
 // Add your settings here
+@import "_variable";
+
+.btn-custom {
+  background: transparent;
+  border: 2px solid $black-1;
+  padding: 22px;
+  margin-top: 5px;
+
+  &:hover, &focus, &:active{}
+}
