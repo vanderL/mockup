@@ -66,7 +66,7 @@
     }
 }
 #about {
-  padding-bottom: 5em;
+  padding: 5em;
   h2{
     color: $black-1;
     padding: 2em 0 1em 0em;
@@ -106,7 +106,7 @@
 }
 #prices {
   background: #f6f6f6;
-  padding: 0 0 2em;
+  padding: 5em;
   h2, h3{
     color: $black-1;
     padding: 2em 0 1em 0em;
@@ -180,4 +180,68 @@
         }
     }
 
+}
+
+#contact{
+    background: $black;
+    min-height: 16em;
+    padding: 5em;
+    h2 {
+        color: $white;
+        padding: 1em 0 0.5em 0;
+        font-weight: 300;
+        font-size: 3.5em;
+    }
+    form{
+      padding: 2em 0 2.5em 0;
+    }
+}
+
+#footer{
+  background: url("/images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    min-height: 10em;
+    h2 {
+        font-size: 2em;
+        font-family: $font-family;
+        font-weight: bold;
+        color: $white;
+        padding: 1em 0;
+        text-transform: uppercase;
+    }
+    p {
+      color: $white;
+    }
+    small {
+      color: $white;
+      display: block;
+      padding: 1.5em 0 1.5em 0;
+    }
+    .social-list {
+        padding: 0;
+        list-style: none;
+        li {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid $white;
+            background: transparent;
+            margin: 1em 0 1em 0.8em;
+            display: inline-block;
+            i {
+                font-size: 2em;
+                padding: 0.6em;
+                color: $white;
+            }
+            &:hover, &:focus, &:active {
+                background: $white;
+                i {
+                    color: $black;
+                }
+            }
+        }
+    }
 }
